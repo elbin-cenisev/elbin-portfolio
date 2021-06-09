@@ -1,0 +1,51 @@
+/* 
+    Moved to a seperate file since it is not my own code.
+    ENTIRELY copied & pasted it from this link:
+    https://www.w3schools.com/howto/howto_css_image_text.asp
+
+    Any edits I made were made purely through trial & error, which
+    is why it is jumbled up and unorganized.
+
+    Every bit of code associated with the overlay is the worst part about this site.
+*/
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: 1em 3em 1em 3em;
+}
+
+.container:hover .centered {
+    opacity:1;
+}
+
+/* These three sections are garbage and need to be changed, 
+but it's the only way I found to make the 1 opacity of the images 
+stay when you hover over the overlay */
+
+.container:hover #first-work {
+    opacity:1;
+}
+
+.container:hover #second-work {
+    opacity:1;
+}
+
+.container:hover #third-work {
+    opacity:1;
+}
+
+.centered {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:var(--heading-col);
+    color: white;
+    font-family:var(--heading-font);
+    font-weight:bold;
+    font-size: 2em;
+    padding: 0 1em 0 1em;
+    opacity: 0;
+    border:3px solid black;
+}

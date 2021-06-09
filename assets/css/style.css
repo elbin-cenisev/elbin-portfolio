@@ -1,0 +1,189 @@
+/* Reusable classes. The names don't always match their purpose, so I'll have to change some of them */
+:root {
+    --background-col: rgb(17, 15, 15);
+    --heading-col: #4d67bd;
+    --text-col: white;
+    --link-col: grey;
+    --heading-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --text-font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    background-color: var(--background-col);
+}
+
+/* The header and every single section is a flex container */
+.flex-container {
+    display:flex;
+}
+
+header {
+    min-width: 800px;
+}
+
+/* h1 only applies to my name in the header */
+h1 {
+    padding:0.5em;
+    background-color: var(--background-col);
+    color: var(--heading-col);
+    font-family:var(--heading-font);
+}
+
+nav {
+    margin-left:auto;
+    align-self:center;
+}
+
+/* Applies to links in navbar and in #contact section */
+a {
+    text-decoration: none;
+    color: var(--link-col);
+    font-family:var(--heading-font);
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 1em 0 1em;
+    padding:0.5em;
+}
+
+nav a:hover {
+    border-bottom:2px solid var(--heading-col);
+    color: white;
+}
+
+section {
+    margin: 3em 0 3em 0;
+    min-width: 800px;
+}
+
+/* I am sure there is a better way to basically create a page break for #about-me  
+but I couldn't think of one besides giving it really huge top/bottom margins */
+#about-me {
+    justify-content:center;
+    align-items: center;
+    margin: 10em 0 25em 0;
+}
+
+.text-block {
+    margin-left:2em;
+    line-height:2;
+    color:var(--text-col);
+    font-family:var(--text-font);
+}
+
+/* This only applies to "Hello there" */
+h2 {
+    color:var(--heading-col);
+    font-size:3em;
+    font-family:var(--heading-font);
+}
+
+/* This applies to #work and #contact headings */
+h3 {
+    font-family: var(--heading-font);
+    font-size:2em;
+    color:var(--heading-col);
+    border-right: 3px solid var(--heading-col);
+    padding: 1em;
+    margin: 0 0 1em 1em;
+    min-width:8%;
+    text-align:end;
+}
+
+/* #work-list is a nested flex of #work. It only contains the big images for each project.
+It's the only way I could think of to allow for flex-wrap without ruining the h3 sidebar */
+#work-list {
+    flex-wrap:wrap;
+}
+
+#work-list img {
+    opacity: 0.3;
+    max-width: 100%;
+    height:auto;
+}
+
+#work-list img:hover {
+    opacity:1;
+}
+
+/* #first refers to the first image in the list, which needs a bigger flex-box*/
+#work-list #first {
+    flex-grow: 2;
+}
+
+#contact {
+    color: var(--link-col);
+    font-family: var(--heading-font);
+    font-weight:bold;
+    align-items:flex-end; /* This is patchwork to *almost* align the contact links with the h3 border */
+}
+
+/* #contact flex-container can probably be optimized; maybe another nested flex? */
+#contact p {
+    margin:0 2em 2em 2em;
+    font-size: 2em;
+    white-space:nowrap;
+}
+#contact p:hover { 
+    border-bottom:2px solid var(--heading-col);
+    color: white;
+}
+#contact a {
+    margin: 0 2em 2em 2em;
+    font-size: 2em;
+    flex-shrink: 1;
+}
+
+#contact a:hover {
+    border-bottom:2px solid var(--heading-col);
+    color: white;
+}
+
+/* Just copyright text */
+footer {
+    margin-top: 5em;
+    color:var(--link-col);
+    border-top: 3px solid var(--link-col);
+    text-align: center;
+    font-family: var(--footer-font);
+}
+
+/* Basically, page changes from flex-rows to flex-containers when window gets too small.
+h3s end up on top of the sections rather than next to them.
+#about-me gets closer to the other parts. Doesn't look great, but... */
+@media screen and (max-width: 1024px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    header {
+        align-items: center;
+    }
+    nav {
+        margin: 0 0 0 0;
+    }
+    #about-me {
+        flex-direction:row;
+        margin: 5em 3em 5em 3em;
+    }
+    h3 {
+        border-right: none;
+        border-bottom: 3px solid var(--heading-col);
+        padding: 0.5em;
+        margin: 0 0 0 0;
+        text-align:center;
+    }
+    #work {
+        align-items:center;
+    }
+    li {
+        display:block;
+    }
+    #contact {
+        align-items:center;
+    }
+    #contact p {
+        margin-top: 2em;
+    }
+}

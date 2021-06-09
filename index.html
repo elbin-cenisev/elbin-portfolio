@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elbin Cenisev's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">   <!-- Main stylesheet -->
+    <link rel="stylesheet" href="./assets/css/overlay.css"> <!-- This stylesheet contains purely copy & paste code to make overlays work-->
+</head>
+
+<body>
+
+<!-- 
+    ===== TITLE / NAV BAR =====
+    "About Me" link sends users to #top instead of #about-me.
+    That's because #about-me link pushes the user down too much (skips the margin). 
+    Patchwork stuff, needs a better solution.
+-->
+<header class="flex-container" id="top">
+    <h1>Elbin Cenisev</h1>
+    <nav>
+        <a href="#top">About Me</a> 
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a href="./assets/documents/Elbin Cenisev Resume.pdf">Resume</a>
+    </nav>
+</header>
+
+<!-- 
+    ===== ABOUT ME ======
+    This floats very high above the other sections until the @media screen width hits. 
+    That's because the page was far too busy if I used it as a sort of banner.
+-->
+
+<section class="flex-container" id="about-me">
+    <img src="./assets/images/me-bw.png" alt="photo of me, Elbin" width="225" height="225">
+    <div class="text-block">
+        <h2>Hello there.</h2>
+        <p>
+            I am currently studying to become a Web Developer.<br>
+            You can see my current work (class assignments) <br> 
+            and my contact information below. 
+        </p>
+    </div>
+</section>
+
+<!-- 
+    ====== MAIN CONTENT ======
+    This includes the WORK and CONTACT sections. 
+    I attempted to mimick the mock-up as much as possible.
+-->
+
+
+<section class="flex-container" id="work">
+    <h3>Work</h3>
+
+    <!-- 
+        The work list below includes images and links to my previous work.
+        Each image is stuck in an awkward container in order for the overlay to work.
+        Similarly, each image has an ID... Because otherwise, hovering over the overlay
+        deactivated image opacity settings. I am not proud of any of this, it needs to be fixed.
+    -->
+
+    <div class="flex-container" id="work-list">
+        <div class="container">
+            <a href="https://github.com/elbin-cenisev/horiseon-homepage">
+            <img src="assets/images/horiseon.PNG" alt="screenshot of horiseon website" id="first-work">
+            <div class="centered">Refactored Code</div>
+            </a>
+        </div>
+        <div class="container">
+            <a href="#">
+            <img src="assets/images/placeholder.png" alt="placeholder" width="500" height="328" id="second-work">
+            <div class="centered">Placeholder</div>
+            </a>
+        </div>
+        <div class="container">
+            <a href="#">
+            <img src="assets/images/placeholder.png" alt="placeholder" width="500" height="328" id="third-work">
+            <div class="centered">Placeholder</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="flex-container" id="contact">
+    <h3>Contact</h3>
+    <p>(804) 709-5953</p>
+    <a href="mailto:elbincenisev@outlook.com">elbincenisev@outlook.com</a>
+    <a href="https://github.com/elbin-cenisev">Github</a>
+</section>
+
+
+<!--
+    ===== FOOTER ======
+    It's a footer with a boring copyright message to make this more legit.
+-->
+<footer>
+    <p>
+        &copy; 2021 Elbin Cenisev
+    </p>
+</footer>
+
+</body>
+
+</html>
