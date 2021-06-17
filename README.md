@@ -1,5 +1,6 @@
 # My Portfolio Website
 Homework Assignment: Create a portfolio website.
+
 Author: Elbin Cenisev
 
 ## General Notes
