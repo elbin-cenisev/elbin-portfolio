@@ -4,11 +4,18 @@ Homework Assignment: Create a portfolio website.
 Author: Elbin Cenisev
 
 ## General Notes
-Right now, this site is not professional and not much of a portfolio, but I hope it will serve as a basic skeleton for future updates.
+Website showcasing my projects and contact information.
+
+## Technologies Used
+HTML, CSS, JavaScript, Bootstrap CSS Framework
 
 ## Deployed Link
 https://elbin-cenisev.github.io/elbin-portfolio/
 
 ## Screenshots
-![Screenshot from 2021-06-17 18-03-26](https://user-images.githubusercontent.com/75343776/122477875-6ca92300-cf96-11eb-8799-b80ca44c76cf.png)
-![Screenshot from 2021-06-17 18-03-38](https://user-images.githubusercontent.com/75343776/122477882-70d54080-cf96-11eb-87fb-1785714aaeba.png)
+![image](https://user-images.githubusercontent.com/75343776/126915265-9ebc6c8c-5a13-48d5-8539-023419a4760f.png)
+![image](https://user-images.githubusercontent.com/75343776/126915272-32daf657-fdd2-4c01-b3fa-b1a0142d8231.png)
+![image](https://user-images.githubusercontent.com/75343776/126915281-1741abc4-dccf-4761-bd23-90e91c32758c.png)
+
+## License
+MIT License
