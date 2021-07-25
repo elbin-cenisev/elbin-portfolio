@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <header class="site-header sticky-top">
     <!--Navbar at the top of the page-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -21,7 +22,7 @@
         <a class="navbar-brand display-3 mx-5" href="#">Elbin Cenisev</a>
 
         <!-- Toggler button for mobile (small screen)-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -29,7 +30,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link mx-5" href="#">About</a>
+              <a class="nav-link mx-5" href="#about">About</a>
             </li>
             <li class="nav-item mx-5">
               <a class="nav-link" href="#">Projects</a>
@@ -40,6 +41,7 @@
           </ul>
         </div>
       </nav>
+    </header>
 
     <!-- Main Content of the page (About, Projects, Contact)-->
     <main>
@@ -63,6 +65,29 @@
         </div>
 
         <div class="b-example-divider"></div>
+
+        <!-- Projects -->
+        <div class="p-4 mt-3 text-center" id="projects">
+            <div class="row p-3">
+                <div class="col">
+                   <h1 class="display-4">Projects</h1>
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col">
+                    <img src="assets/images/placeholder.png">
+                </div>
+                <div class="col">
+                    Test
+                </div>
+                <div class="col">
+                    Test
+                </div>
+            </div>
+        </div>
+
+    </main>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
