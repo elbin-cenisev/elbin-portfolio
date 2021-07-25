@@ -13,6 +13,16 @@ h1 {
 .nav-link:hover {
     border-bottom:grey;
 }
+#selfie {
+    width: 200px;
+    height: auto;
+    margin: auto;    
+    display: block;
+}
+#about {
+    color: var(--text-color)
+}
+
 /* Stolen from the Heroes example on Bootstrap 5 */
 .b-example-divider {
     height: 3rem;
